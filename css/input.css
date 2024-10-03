@@ -4,25 +4,26 @@
 
 @layer base {
   :root {
-    --background: 0 0% 5%;
+    --background: 32 50% 92%;
+    --bs-body-bg: 32 50% 92%;
 
-    --background-primary: 35 41% 75%;
+    --background-primary: 336 100% 78%;
     --background-primary-hover: 35 60% 82%;
 
     --background-secondary: 0 0% 10%;
     --background-secondary-hover: 0 0% 13%;
 
-    --background-muted: 35 41% 75% / 5%;
-    --background-muted-hover: 35 41% 75% / 10%;
+    --background-muted: 336 100% 78% / 5%;
+    --background-muted-hover: 336 100% 78% / 10%;
 
-    --border: 35 41% 75% / 15%;
-    --border-hover: 35 41% 75% / 30%;
+    --border: 336 100% 78% / 15%;
+    --border-hover: 336 100% 78% / 30%;
 
-    --icon: 35 41% 75% / 100%;
+    --icon: 336 100% 78%/ 100%;
     --icon-inverse: 210 3% 12% / 100%;
 
-    --text: 35 41% 75% / 100%;
-    --text-muted: 35 41% 75% / 60%;
+    --text: 180 1% 33% / 100%;
+    --text-muted: 180 1% 33% / 60%;
     --text-inverse: 210 3% 12% / 100%;
   }
 }
@@ -155,49 +156,165 @@
 
 
   @font-face {
-    font-family: 'Chillax';
-    font-style: normal;
-    font-weight: 200;
-    src: url(/fonts/chillax/Chillax-Extralight.otf) format('opentype');
-  }
-  @font-face {
-    font-family: 'Chillax';
-    font-style: normal;
-    font-weight: 300;
-    src: url(/fonts/chillax/Chillax-Light.otf) format('opentype');
-  }
-  @font-face {
-    font-family: 'Chillax';
+    font-family: 'EBGaramond';
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/chillax/Chillax-Regular.otf) format('opentype');
+    src: url(/fonts/eb-garamond/EBGaramond-Regular.ttf) format('truetype');
   }
   @font-face {
-    font-family: 'Chillax';
+    font-family: 'EBGaramond';
+    font-style: italic;
+    font-weight: 400;
+    src: url(/fonts/eb-garamond/EBGaramond-Italic.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'EBGaramond';
     font-style: normal;
     font-weight: 500;
-    src: url(/fonts/chillax/Chillax-Medium.otf) format('opentype');
+    src: url(/fonts/eb-garamond/EBGaramond-Medium.ttf) format('truetype');
   }
   @font-face {
-    font-family: 'Chillax';
+    font-family: 'EBGaramond';
+    font-style: italic;
+    font-weight: 500;
+    src: url(/fonts/eb-garamond/EBGaramond-MediumItalic.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'EBGaramond';
     font-style: normal;
     font-weight: 600;
-    src: url(/fonts/chillax/Chillax-Semibold.otf) format('opentype');
+    src: url(/fonts/eb-garamond/EBGaramond-SemiBold.ttf) format('truetype');
   }
   @font-face {
-    font-family: 'Chillax';
+    font-family: 'EBGaramond';
+    font-style: italic;
+    font-weight: 600;
+    src: url(/fonts/eb-garamond/EBGaramond-SemiBoldItalic.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'EBGaramond';
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/chillax/Chillax-Bold.otf) format('opentype');
+    src: url(/fonts/eb-garamond/EBGaramond-Bold.ttf) format('truetype');
   }
+  @font-face {
+    font-family: 'EBGaramond';
+    font-style: italic;
+    font-weight: 700;
+    src: url(/fonts/eb-garamond/EBGaramond-BoldItalic.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'EBGaramond';
+    font-style: normal;
+    font-weight: 800;
+    src: url(/fonts/eb-garamond/EBGaramond-ExtraBold.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'EBGaramond';
+    font-style: italic;
+    font-weight: 800;
+    src: url(/fonts/eb-garamond/EBGaramond-ExtraBoldItalic.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/cabin/Cabin-Regular.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Cabin';
+    font-style: italic;
+    font-weight: 400;
+    src: url(/fonts/cabin/Cabin-Italic.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 500;
+    src: url(/fonts/cabin/Cabin-Medium.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Cabin';
+    font-style: italic;
+    font-weight: 500;
+    src: url(/fonts/cabin/Cabin-MediumItalic.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 600;
+    src: url(/fonts/cabin/Cabin-SemiBold.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Cabin';
+    font-style: italic;
+    font-weight: 600;
+    src: url(/fonts/cabin/Cabin-SemiBoldItalic.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 700;
+    src: url(/fonts/cabin/Cabin-Bold.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Cabin';
+    font-style: italic;
+    font-weight: 700;
+    src: url(/fonts/cabin/Cabin-BoldItalic.ttf) format('truetype');
+  }
+
+
+  @font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/nunito/Nunito-Regular.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Nunito';
+    font-style: italic;
+    font-weight: 400;
+    src: url(/fonts/nunito/Nunito-Italic.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    src: url(/fonts/nunito/Nunito-Medium.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Nunito';
+    font-style: italic;
+    font-weight: 500;
+    src: url(/fonts/nunito/Nunito-MediumItalic.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    src: url(/fonts/nunito/Nunito-Bold.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Nunito';
+    font-style: italic;
+    font-weight: 700;
+    src: url(/fonts/nunito/Nunito-BoldItalic.ttf) format('truetype');
+  }
+
 }
+
+
 
 @layer base {
   body {
-    @apply bg-background text-text font-satoshi;
+    @apply bg-background text-text font-cabin;
     font-feature-settings: "rlig" 1, "calt" 1;
     font-size: 12px;
-    font-weight: normal;
+    font-weight: bold;
     line-height: 1.1;
   }
 }
@@ -214,3 +331,30 @@ input {
   border-style: none;
   border-color: Transparent;
 }
+
+.progress-bar {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 1rem 1rem;
+  -webkit-animation: progress-bar-stripes 1s linear infinite;
+  animation: progress-bar-stripes 1s linear infinite;
+}
+
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 1rem 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+
+@-webkit-keyframes progress-bar-stripes {
+  from {
+    background-position: 1rem 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
