@@ -555,289 +555,170 @@ video {
 }
 
 :root {
-  --background: 0 0% 5%;
-  --background-primary: 35 41% 75%;
+  --background: 32 50% 92%;
+  --bs-body-bg: 32 50% 92%;
+  --background-primary: 336 100% 78%;
   --background-primary-hover: 35 60% 82%;
   --background-secondary: 0 0% 10%;
   --background-secondary-hover: 0 0% 13%;
-  --background-muted: 35 41% 75% / 5%;
-  --background-muted-hover: 35 41% 75% / 10%;
-  --border: 35 41% 75% / 15%;
-  --border-hover: 35 41% 75% / 30%;
-  --icon: 35 41% 75% / 100%;
+  --background-muted: 336 100% 78% / 5%;
+  --background-muted-hover: 336 100% 78% / 10%;
+  --border: 336 100% 78% / 15%;
+  --border-hover: 336 100% 78% / 30%;
+  --icon: 336 100% 78%/ 100%;
   --icon-inverse: 210 3% 12% / 100%;
-  --text: 35 41% 75% / 100%;
-  --text-muted: 35 41% 75% / 60%;
+  --text: 180 1% 33% / 100%;
+  --text-muted: 180 1% 33% / 60%;
   --text-inverse: 210 3% 12% / 100%;
 }
 
 @font-face {
-  font-family: 'Satoshi';
-
-  font-style: normal;
-
-  font-weight: 300;
-
-  src: url(/fonts/satoshi/Satoshi-Light.otf) format('opentype');
-}
-
-@font-face {
-  font-family: 'Satoshi';
-
-  font-style: italic;
-
-  font-weight: 300;
-
-  src: url(/fonts/satoshi/Satoshi-LightItalic.otf) format('opentype');
-}
-
-@font-face {
-  font-family: 'Satoshi';
+  font-family: 'Cabin';
 
   font-style: normal;
 
   font-weight: 400;
 
-  src: url(/fonts/satoshi/Satoshi-Regular.otf) format('opentype');
+  src: url(/fonts/cabin/Cabin-Regular.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: 'Satoshi';
+  font-family: 'Cabin';
 
   font-style: italic;
 
   font-weight: 400;
 
-  src: url(/fonts/satoshi/Satoshi-Italic.otf) format('opentype');
+  src: url(/fonts/cabin/Cabin-Italic.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: 'Satoshi';
+  font-family: 'Cabin';
 
   font-style: normal;
 
   font-weight: 500;
 
-  src: url(/fonts/satoshi/Satoshi-Medium.otf) format('opentype');
+  src: url(/fonts/cabin/Cabin-Medium.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: 'Satoshi';
+  font-family: 'Cabin';
 
   font-style: italic;
 
   font-weight: 500;
 
-  src: url(/fonts/satoshi/Satoshi-MediumItalic.otf) format('opentype');
+  src: url(/fonts/cabin/Cabin-MediumItalic.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: 'Satoshi';
-
-  font-style: normal;
-
-  font-weight: 700;
-
-  src: url(/fonts/satoshi/Satoshi-Bold.otf) format('opentype');
-}
-
-@font-face {
-  font-family: 'Satoshi';
-
-  font-style: italic;
-
-  font-weight: 700;
-
-  src: url(/fonts/satoshi/Satoshi-BoldItalic.otf) format('opentype');
-}
-
-@font-face {
-  font-family: 'Satoshi';
-
-  font-style: normal;
-
-  font-weight: 900;
-
-  src: url(/fonts/satoshi/Satoshi-Black.otf) format('opentype');
-}
-
-@font-face {
-  font-family: 'Satoshi';
-
-  font-style: italic;
-
-  font-weight: 900;
-
-  src: url(/fonts/satoshi/Satoshi-BlackItalic.otf) format('opentype');
-}
-
-@font-face {
-  font-family: 'Gambetta';
-
-  font-style: normal;
-
-  font-weight: 300;
-
-  src: url(/fonts/gambetta/Gambetta-Light.otf) format('opentype');
-}
-
-@font-face {
-  font-family: 'Gambetta';
-
-  font-style: italic;
-
-  font-weight: 300;
-
-  src: url(/fonts/gambetta/Gambetta-LightItalic.otf) format('opentype');
-}
-
-@font-face {
-  font-family: 'Gambetta';
-
-  font-style: normal;
-
-  font-weight: 400;
-
-  src: url(/fonts/gambetta/Gambetta-Regular.otf) format('opentype');
-}
-
-@font-face {
-  font-family: 'Gambetta';
-
-  font-style: italic;
-
-  font-weight: 400;
-
-  src: url(/fonts/gambetta/Gambetta-Italic.otf) format('opentype');
-}
-
-@font-face {
-  font-family: 'Gambetta';
-
-  font-style: normal;
-
-  font-weight: 500;
-
-  src: url(/fonts/gambetta/Gambetta-Medium.otf) format('opentype');
-}
-
-@font-face {
-  font-family: 'Gambetta';
-
-  font-style: italic;
-
-  font-weight: 500;
-
-  src: url(/fonts/gambetta/Gambetta-MediumItalic.otf) format('opentype');
-}
-
-@font-face {
-  font-family: 'Gambetta';
+  font-family: 'Cabin';
 
   font-style: normal;
 
   font-weight: 600;
 
-  src: url(/fonts/gambetta/Gambetta-Semibold.otf) format('opentype');
+  src: url(/fonts/cabin/Cabin-SemiBold.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: 'Gambetta';
+  font-family: 'Cabin';
 
   font-style: italic;
 
   font-weight: 600;
 
-  src: url(/fonts/gambetta/Gambetta-SemiboldItalic.otf) format('opentype');
+  src: url(/fonts/cabin/Cabin-SemiBoldItalic.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: 'Gambetta';
+  font-family: 'Cabin';
 
   font-style: normal;
 
   font-weight: 700;
 
-  src: url(/fonts/gambetta/Gambetta-Bold.otf) format('opentype');
+  src: url(/fonts/cabin/Cabin-Bold.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: 'Gambetta';
+  font-family: 'Cabin';
 
   font-style: italic;
 
   font-weight: 700;
 
-  src: url(/fonts/gambetta/Gambetta-BoldItalic.otf) format('opentype');
+  src: url(/fonts/cabin/Cabin-BoldItalic.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: 'Chillax';
-
-  font-style: normal;
-
-  font-weight: 200;
-
-  src: url(/fonts/chillax/Chillax-Extralight.otf) format('opentype');
-}
-
-@font-face {
-  font-family: 'Chillax';
-
-  font-style: normal;
-
-  font-weight: 300;
-
-  src: url(/fonts/chillax/Chillax-Light.otf) format('opentype');
-}
-
-@font-face {
-  font-family: 'Chillax';
+  font-family: 'Nunito';
 
   font-style: normal;
 
   font-weight: 400;
 
-  src: url(/fonts/chillax/Chillax-Regular.otf) format('opentype');
+  src: url(/fonts/nunito/Nunito-Regular.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: 'Chillax';
+  font-family: 'Nunito';
+
+  font-style: italic;
+
+  font-weight: 400;
+
+  src: url(/fonts/nunito/Nunito-Italic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Nunito';
 
   font-style: normal;
 
   font-weight: 500;
 
-  src: url(/fonts/chillax/Chillax-Medium.otf) format('opentype');
+  src: url(/fonts/nunito/Nunito-Medium.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: 'Chillax';
+  font-family: 'Nunito';
 
-  font-style: normal;
+  font-style: italic;
 
-  font-weight: 600;
+  font-weight: 500;
 
-  src: url(/fonts/chillax/Chillax-Semibold.otf) format('opentype');
+  src: url(/fonts/nunito/Nunito-MediumItalic.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: 'Chillax';
+  font-family: 'Nunito';
 
   font-style: normal;
 
   font-weight: 700;
 
-  src: url(/fonts/chillax/Chillax-Bold.otf) format('opentype');
+  src: url(/fonts/nunito/Nunito-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Nunito';
+
+  font-style: italic;
+
+  font-weight: 700;
+
+  src: url(/fonts/nunito/Nunito-BoldItalic.ttf) format('truetype');
 }
 
 body {
   background-color: hsl(var(--background));
-  font-family: "Satoshi";
+  font-family: "Cabin";
   color: hsl(var(--text));
   font-feature-settings: "rlig" 1, "calt" 1;
   font-size: 12px;
-  font-weight: normal;
+  font-weight: bold;
   line-height: 1.1;
 }
 
@@ -1028,6 +909,10 @@ body {
   margin-top: 8px;
 }
 
+.mt-4 {
+  margin-top: 16px;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -1147,6 +1032,10 @@ body {
   height: 4px;
 }
 
+.h-10 {
+  height: 40px;
+}
+
 .h-2 {
   height: 8px;
 }
@@ -1212,10 +1101,6 @@ body {
   width: 30px;
 }
 
-.w-\[0px\] {
-  width: 0px;
-}
-
 .w-\[114px\] {
   width: 114px;
 }
@@ -1234,10 +1119,6 @@ body {
 
 .w-\[20px\] {
   width: 20px;
-}
-
-.w-\[240px\] {
-  width: 240px;
 }
 
 .w-\[24px\] {
@@ -2183,6 +2064,10 @@ body {
   border-radius: 0.25rem;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .rounded-\[2px\] {
   border-radius: 2px;
 }
@@ -2323,9 +2208,9 @@ body {
   border-color: hsl(var(--border));
 }
 
-.bg-\[\#181716\] {
+.bg-\[\#e9ecef\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(24 23 22 / var(--tw-bg-opacity));
+  background-color: rgb(233 236 239 / var(--tw-bg-opacity));
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
@@ -2493,6 +2378,11 @@ body {
   padding-right: 6px;
 }
 
+.px-10 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .px-3 {
   padding-left: 12px;
   padding-right: 12px;
@@ -2622,12 +2512,8 @@ body {
   vertical-align: super;
 }
 
-.font-chillax {
-  font-family: "Chillax";
-}
-
-.font-gambetta {
-  font-family: "Gambetta";
+.font-nunito {
+  font-family: "Nunito";
 }
 
 .text-3xl {
@@ -2681,6 +2567,10 @@ body {
 
 .font-light {
   font-weight: 300;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .font-normal {
@@ -2761,6 +2651,15 @@ body {
 
 .text-\[\#336699\]\/\[\.35\] {
   color: rgb(51 102 153 / .35);
+}
+
+.text-\[\#f5ebe0\] {
+  --tw-text-opacity: 1;
+  color: rgb(245 235 224 / var(--tw-text-opacity));
+}
+
+.text-background-primary {
+  color: hsl(var(--background-primary));
 }
 
 .text-blue-500 {
@@ -3174,6 +3073,22 @@ input {
   border-color: Transparent;
 }
 
+.progress-bar {
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-size: 1rem 1rem;
+  animation: progress-bar-stripes 1s linear infinite;
+}
+
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 1rem 0;
+  }
+
+  to {
+    background-position: 0 0;
+  }
+}
+
 .hover\:border-border-hover:hover {
   border-color: hsl(var(--border-hover));
 }
@@ -3250,25 +3165,12 @@ input {
     min-height: fit-content;
   }
 
-  .tablet\:w-\[400px\] {
-    width: 400px;
-  }
-
-  .tablet\:w-min {
-    width: -moz-min-content;
-    width: min-content;
-  }
-
   .tablet\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .tablet\:flex-row {
     flex-direction: row;
-  }
-
-  .tablet\:justify-start {
-    justify-content: flex-start;
   }
 
   .tablet\:justify-between {
@@ -3294,11 +3196,6 @@ input {
   .tablet\:px-10 {
     padding-left: 40px;
     padding-right: 40px;
-  }
-
-  .tablet\:px-8 {
-    padding-left: 32px;
-    padding-right: 32px;
   }
 
   .tablet\:py-16 {
@@ -3378,6 +3275,10 @@ input {
     width: 250px;
   }
 
+  .desktop\:w-\[600px\] {
+    width: 600px;
+  }
+
   .desktop\:w-full {
     width: 100%;
   }
@@ -3404,5 +3305,10 @@ input {
 
   .desktop\:p-10 {
     padding: 40px;
+  }
+
+  .desktop\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 }

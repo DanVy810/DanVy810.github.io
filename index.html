@@ -4,7 +4,29 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Đan Vy</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/style.css" />
+
     <meta name="description" content="" />
 
     <meta property="og:title" content="" />
@@ -25,27 +47,38 @@
     <header
       id="header"
       data-opened="false"
-      class="group fixed left-0 top-0 z-50 flex w-full items-center justify-center px-6 py-4 tablet:px-8 tablet:py-6"
+      class="group sticky left-0 top-0 z-50 flex w-full items-center py-4 tablet:py-6"
     >
       <div
-        class="flex w-full items-center border-[1px] border-solid border-border bg-background-muted py-3 pl-5 pr-4 backdrop-blur-2xl hover:border-border-hover hover:bg-background-muted-hover tablet:w-min"
+        class="flex w-full items-center justify-between border-[1px] border-solid border-border bg-background-muted py-3 pl-5 pr-4 backdrop-blur-2xl hover:border-border-hover hover:bg-background-muted-hover"
       >
         <div
-          class="flex h-full w-full items-center justify-between tablet:justify-start tablet:gap-8"
+          class="flex h-full w-full items-center justify-between tablet:gap-8 desktop:px-40"
         >
           <a href="." class="w-min whitespace-nowrap text-3xl">
-            <h1>Đan Vy.</h1>
+            <h1 class="text-background-primary">Vy's Porfolio</h1>
           </a>
           <div id="navbar" class="flex gap-3">
             <nav
               id="navbar-menu"
-              class="hidden items-center justify-center gap-5 tablet:flex"
+              class="hidden items-center justify-center gap-5 text-[16px] tablet:flex"
             >
-              <a href="./services.html" class="font-normal uppercase"
-                >services</a
+              <a
+                href="./services.html"
+                class="whitespace-nowrap font-normal uppercase"
               >
-              <a href="./work.html" class="font-normal uppercase">work</a>
-              <a href="./blog.html" class="font-normal uppercase">blog</a>
+                Dịch Vụ
+              </a>
+              <a
+                href="./work.html"
+                class="whitespace-nowrap font-normal uppercase"
+                >Sản Phẩm</a
+              >
+              <a
+                href="./blog.html"
+                class="whitespace-nowrap font-normal uppercase"
+                >Blog</a
+              >
             </nav>
             <div
               id="mobile-icon"
@@ -57,56 +90,61 @@
             </div>
             <a
               href="./contact.html"
-              class="order-1 whitespace-nowrap rounded-[2px] border-[1px] border-solid bg-background-primary px-4 py-2.5 uppercase text-text-inverse hover:bg-background-primary-hover"
+              class="order-1 whitespace-nowrap rounded-[2px] border-[1px] border-solid bg-background-primary px-4 py-2.5 text-[16px] uppercase text-text-inverse hover:bg-background-primary-hover"
             >
-              let's talk
+              Liên Hệ
             </a>
           </div>
         </div>
         <nav
           id="mobile-nav"
-          class="absolute left-0 top-[70px] w-full border-[1px] border-solid border-border bg-[#181716] p-6 hover:border-border-hover group-data-[opened=false]:hidden tablet:hidden"
+          class="absolute left-0 top-[70px] w-full border-[1px] border-solid border-border bg-background-primary p-6 backdrop-blur-2xl hover:border-border-hover group-data-[opened=false]:hidden tablet:hidden"
         >
           <div class="flex flex-col items-center justify-center gap-6">
             <div class="flex flex-col items-center justify-center gap-5">
-              <a href="./services.html" class="uppercase">services</a>
-              <a href="./work.html" class="uppercase">work</a>
-              <a href="./blog.html" class="uppercase">blog</a>
+              <a href="./services.html" class="whitespace-nowrap uppercase"
+                >Dịch Vụ</a
+              >
+              <a href="./work.html" class="uppercase"> Sản Phẩm </a>
+              <a href="./blog.html" class="uppercase"> Blog </a>
             </div>
             <a
               href="./contact.html"
               class="w-full items-center justify-center rounded-[2px] border-[1px] border-solid bg-background-primary px-4 py-2.5 text-center uppercase text-text-inverse hover:bg-background-primary-hover"
             >
-              let's talk
+              Liên Hệ
             </a>
           </div>
         </nav>
       </div>
     </header>
+
     <main id="main" class="m-0 p-0">
       <section
         id="hero-section"
-        class="flex min-h-dvh flex-col items-center justify-center gap-12 p-6 tablet:min-h-fit tablet:p-10"
+        class="flex flex-col items-center justify-center gap-12 px-10 tablet:px-10"
       >
-        <div class="flex flex-col items-center gap-4">
+        <div class="flex flex-col items-center gap-1">
           <img
             alt="profile-image"
             src="img/profile-image.png"
-            class="h-auto w-[240px] object-cover tablet:w-[400px]"
+            class="h-auto w-full object-cover desktop:w-[600px]"
           />
-          <h2 class="text-center text-[64px] font-light tablet:text-[80px]">
-            Web Designer
+          <h2 class="text-center text-[64px] font-medium tablet:text-[80px]">
+            Designer
           </h2>
           <h2
-            class="text-center font-gambetta text-[64px] font-light italic tablet:text-[80px]"
+            class="typewrite text-center font-nunito text-[64px] font-light italic text-background-primary tablet:text-[80px]"
+            data-type='["& Illustrator"]'
           >
-            & Developer
+            <span class="wrap"></span>
           </h2>
           <p
-            class="max-w-[600px] text-center font-chillax text-[18px] font-light tablet:text-[22px]"
+            class="max-w-[600px] text-center text-[16px] text-[18px] font-light tablet:text-[22px]"
           >
-            Premium Web Design, Development, and SEO services to help your
-            business stand out.
+            Chào mừng bạn đến với portfolio của tôi, nơi tôi kết hợp sự sáng tạo
+            và kỹ thuật để mang đến những thiết kế và hình ảnh minh họa độc đáo,
+            phản ánh cá tính và phong cách riêng của mình.
           </p>
         </div>
         <a href="#services-section" class="flex gap-4">
@@ -118,18 +156,18 @@
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 256 256"
                 focusable="false"
-                color="rgb(218, 197, 167)"
+                color="#ff8fbc"
                 style="
                   user-select: none;
                   width: 100%;
                   height: 100%;
                   display: inline-block;
-                  fill: rgb(218, 197, 167);
-                  color: rgb(218, 197, 167);
+                  fill: #ff8fbc;
+                  color: #ff8fbc;
                   flex-shrink: 0;
                 "
               >
-                <g color="rgb(218, 197, 167)">
+                <g color="#ff8fbc">
                   <path
                     d="M204.24,148.24l-72,72a6,6,0,0,1-8.48,0l-72-72a6,6,0,0,1,8.48-8.48L122,201.51V40a6,6,0,0,1,12,0V201.51l61.76-61.75a6,6,0,0,1,8.48,8.48Z"
                   ></path>
@@ -138,9 +176,9 @@
             </div>
           </div>
           <p
-            class="flex items-center justify-center text-center text-[13px] font-normal tablet:text-[22px]"
+            class="flex items-center justify-center text-center text-[13px] text-[16px] font-normal tablet:text-[22px]"
           >
-            MY SERVICES
+            Dịch Vụ Của Tôi
           </p>
         </a>
       </section>
@@ -150,16 +188,17 @@
       >
         <div class="flex max-w-[1400px] flex-col gap-4 desktop:flex-row">
           <div
-            class="flex flex-col gap-8 border-[1px] border-solid border-border bg-background-muted p-8 hover:border-border-hover hover:bg-background-muted-hover tablet:p-10"
+            class="flex w-full flex-col gap-8 border-[1px] border-solid border-border bg-background-muted p-8 hover:border-border-hover hover:bg-background-muted-hover tablet:p-10"
           >
             <div class="flex flex-col gap-2">
               <div class="flex flex-col gap-1">
                 <p class="text-[13px] text-text-muted">01</p>
-                <p class="text-[20px] font-light uppercase">web design</p>
+                <p class="text-[20px] font-bold uppercase">Illustration</p>
               </div>
-              <p class="font-chillax text-[14px] font-light tablet:text-[16px]">
-                Visually stunning web designs that captivate your audience by
-                blending your brand voice and customer needs.
+              <p class="text-[16px] font-light tablet:text-[16px]">
+                Dịch vụ vẽ minh họa của tôi mang đến những tác phẩm độc đáo,
+                truyền tải thông điệp mạnh mẽ và góp phần làm nổi bật thương
+                hiệu của bạn qua từng nét vẽ sáng tạo.
               </p>
             </div>
             <a href="./services.html#webdesign" class="flex gap-4">
@@ -179,23 +218,25 @@
                 </div>
               </div>
               <p
-                class="flex items-center justify-center text-center text-[13px] font-normal uppercase tablet:text-[22px]"
+                class="flex items-center justify-center text-center text-[16px] font-normal uppercase text-background-primary tablet:text-[22px]"
               >
-                about web design
+                Tìm Hiểu Thêm
               </p>
             </a>
           </div>
           <div
-            class="flex flex-col gap-8 border-[1px] border-solid border-border bg-background-muted p-8 hover:border-border-hover hover:bg-background-muted-hover tablet:p-10"
+            class="flex w-full flex-col gap-8 border-[1px] border-solid border-border bg-background-muted p-8 hover:border-border-hover hover:bg-background-muted-hover tablet:p-10"
           >
             <div class="flex flex-col gap-2">
               <div class="flex flex-col gap-1">
                 <p class="text-[13px] text-text-muted">02</p>
-                <p class="text-[20px] font-light uppercase">development</p>
+                <p class="text-[20px] font-bold uppercase">Branding Design</p>
               </div>
-              <p class="font-chillax text-[14px] font-light tablet:text-[16px]">
-                Get custom web development solutions that are tailored to your
-                specifications, designed to deliver a flawless user experience.
+              <p class="text-[14px] font-light tablet:text-[16px]">
+                Dịch vụ thiết kế bộ nhận diện thương hiệu của tôi giúp tạo ra
+                một hình ảnh đồng nhất và ấn tượng, từ logo đến màu sắc và
+                typography, nhằm khắc sâu dấu ấn thương hiệu trong lòng khách
+                hàng.
               </p>
             </div>
             <a href="./services.html#development" class="flex gap-4">
@@ -215,23 +256,24 @@
                 </div>
               </div>
               <p
-                class="flex items-center justify-center text-center text-[13px] font-normal uppercase tablet:text-[22px]"
+                class="flex items-center justify-center text-center text-[13px] font-normal uppercase text-background-primary tablet:text-[22px]"
               >
-                about development
+                Tìm Hiểu Thêm
               </p>
             </a>
           </div>
           <div
-            class="flex flex-col gap-8 border-[1px] border-solid border-border bg-background-muted p-8 hover:border-border-hover hover:bg-background-muted-hover tablet:p-10"
+            class="flex w-full flex-col gap-8 border-[1px] border-solid border-border bg-background-muted p-8 hover:border-border-hover hover:bg-background-muted-hover tablet:p-10"
           >
             <div class="flex flex-col gap-2">
               <div class="flex flex-col gap-1">
                 <p class="text-[13px] text-text-muted">03</p>
-                <p class="text-[20px] font-light uppercase">content & seo</p>
+                <p class="text-[20px] font-bold uppercase">Graphic Design</p>
               </div>
-              <p class="font-chillax text-[14px] font-light tablet:text-[16px]">
-                Proven SEO strategies that enhance your online performance,
-                bringing you to the forefront of organic search results.
+              <p class="text-[14px] font-light tablet:text-[16px]">
+                Dịch vụ thiết kế đồ họa của tôi cung cấp các giải pháp hình ảnh
+                sáng tạo và chuyên nghiệp, từ quảng cáo đến ấn phẩm, giúp bạn
+                truyền tải thông điệp hiệu quả và thu hút khách hàng.
               </p>
             </div>
             <a href="./services.html#seo" class="flex gap-4">
@@ -251,9 +293,46 @@
                 </div>
               </div>
               <p
-                class="flex items-center justify-center text-center text-[13px] font-normal uppercase tablet:text-[22px]"
+                class="flex items-center justify-center text-center text-[13px] font-normal uppercase text-background-primary tablet:text-[22px]"
               >
-                about seo
+                Tìm Hiểu Thêm
+              </p>
+            </a>
+          </div>
+          <div
+            class="flex w-full flex-col gap-8 border-[1px] border-solid border-border bg-background-muted p-8 hover:border-border-hover hover:bg-background-muted-hover tablet:p-10"
+          >
+            <div class="flex flex-col gap-2">
+              <div class="flex flex-col gap-1">
+                <p class="text-[13px] text-text-muted">04</p>
+                <p class="text-[20px] font-bold uppercase">Photography</p>
+              </div>
+              <p class="text-[14px] font-light tablet:text-[16px]">
+                Dịch vụ chụp ảnh sản phẩm của tôi chuyên tạo ra những bức ảnh
+                tinh tế và sống động, giúp sản phẩm của bạn nổi bật và thu hút
+                khách hàng ngay từ cái nhìn đầu tiên.
+              </p>
+            </div>
+            <a href="./services.html#seo" class="flex gap-4">
+              <div
+                class="flex rounded-full bg-background-muted px-3 py-3 hover:bg-background-muted-hover"
+              >
+                <div class="h-[18px] w-[18px]">
+                  <svg
+                    style="width: 100%; height: 100%"
+                    viewBox="0 0 18 18"
+                    preserveAspectRatio="none"
+                    width="100%"
+                    height="100%"
+                  >
+                    <use href="#svg1845496161_258"></use>
+                  </svg>
+                </div>
+              </div>
+              <p
+                class="flex items-center justify-center text-center text-[13px] font-normal uppercase text-background-primary tablet:text-[22px]"
+              >
+                Tìm Hiểu Thêm
               </p>
             </a>
           </div>
@@ -268,7 +347,7 @@
             class="flex flex-col items-center justify-center gap-4 tablet:flex-row tablet:justify-between"
           >
             <h2 class="tablet:text[40px] text-center text-[32px] font-light">
-              Selected Work
+              Sản Phẩm
             </h2>
             <a href="./work.html" class="flex gap-4">
               <div
@@ -299,15 +378,19 @@
                 <div
                   class="flex h-full w-full flex-row items-center justify-between rounded-[2px] bg-background-muted px-4 py-3 backdrop-blur-lg hover:bg-background-muted-hover"
                 >
-                  <h3 class="text-[20px] font-light">Space</h3>
+                  <h3 class="text-[20px] font-light text-[#f5ebe0]">
+                    Brewzy-Bia Không Cồn
+                  </h3>
 
-                  <h3 class="text-[13px] uppercase">web design</h3>
+                  <h3 class="text-[13px] uppercase text-[#f5ebe0]">
+                    Branding Design
+                  </h3>
                 </div>
               </div>
               <img
                 sizes="max(min(max(100vw, 1px) - 48px, 1400px), 1px)"
                 class="h-full w-full object-cover"
-                src="img/work-section/space.avif"
+                src="img/work-section/brewzy-poster.png"
                 alt="work-1"
               />
             </div>
@@ -316,15 +399,19 @@
                 <div
                   class="flex h-full w-full flex-row items-center justify-between rounded-[2px] bg-background-muted px-4 py-3 backdrop-blur-lg hover:bg-background-muted-hover"
                 >
-                  <h3 class="text-[20px] font-light">Nova</h3>
+                  <h3 class="text-[20px] font-light text-[#f5ebe0]">
+                    Silence of the lamb
+                  </h3>
 
-                  <h3 class="text-[13px] uppercase">web design</h3>
+                  <h3 class="text-[13px] uppercase text-[#f5ebe0]">
+                    poster design
+                  </h3>
                 </div>
               </div>
               <img
                 sizes="max(min(max(100vw, 1px) - 48px, 1400px), 1px)"
                 class="h-full w-full object-cover"
-                src="img/work-section/nova.avif"
+                src="img/work-section/hannibal-poster.png"
                 alt="work-1"
               />
             </div>
@@ -333,15 +420,19 @@
                 <div
                   class="flex h-full w-full flex-row items-center justify-between rounded-[2px] bg-background-muted px-4 py-3 backdrop-blur-lg hover:bg-background-muted-hover"
                 >
-                  <h3 class="text-[20px] font-light">Sonic</h3>
+                  <h3 class="text-[20px] font-light text-[#f5ebe0]">
+                    Digital Panting
+                  </h3>
 
-                  <h3 class="text-[13px] uppercase">web design</h3>
+                  <h3 class="text-[13px] uppercase text-[#f5ebe0]">
+                    Illustration
+                  </h3>
                 </div>
               </div>
               <img
                 sizes="max(min(max(100vw, 1px) - 48px, 1400px), 1px)"
                 class="h-full w-full object-cover"
-                src="img/work-section/sonic.avif"
+                src="img/work-section/illustrator.png"
                 alt="work-1"
               />
             </div>
@@ -350,15 +441,19 @@
                 <div
                   class="flex h-full w-full flex-row items-center justify-between rounded-[2px] bg-background-muted px-4 py-3 backdrop-blur-lg hover:bg-background-muted-hover"
                 >
-                  <h3 class="text-[20px] font-light">Solar</h3>
+                  <h3 class="text-[20px] font-light text-[#f5ebe0]">
+                    Centella
+                  </h3>
 
-                  <h3 class="text-[13px] uppercase">web design</h3>
+                  <h3 class="text-[13px] uppercase text-[#f5ebe0]">
+                    Photography
+                  </h3>
                 </div>
               </div>
               <img
                 sizes="max(min(max(100vw, 1px) - 48px, 1400px), 1px)"
                 class="h-full w-full object-cover"
-                src="img/work-section/solar.avif"
+                src="img/work-section/centella.png"
                 alt="work-1"
               />
             </div>
@@ -372,24 +467,22 @@
         <div class="flex max-w-[1400px] flex-col">
           <div class="flex flex-col gap-12">
             <div class="flex flex-col items-center gap-4">
-              <h2 class="text-center text-[13px] uppercase">the process</h2>
+              <h2 class="text-center text-[20px] uppercase">Bảng Giá</h2>
               <div>
                 <h3
                   class="text-center text-[56px] font-light tablet:text-[80px]"
                 >
-                  Your Website
+                  Thiết kế tinh tế
                 </h3>
                 <h3
-                  class="text-center font-gambetta text-[56px] font-light italic tablet:text-[80px]"
+                  class="text-center font-nunito text-[56px] font-light italic tablet:text-[80px]"
                 >
-                  in 5 steps
+                  giá cả phải chăng!
                 </h3>
               </div>
-              <p
-                class="max-w-[500px] text-center font-chillax text-[18px] font-light"
-              >
-                Our process ensures that we create a website tailored to your
-                business needs.
+              <p class="max-w-[500px] text-center text-[18px] font-light">
+                Cung cấp các gói dịch vụ đa dạng, giúp bạn dễ dàng lựa chọn giải
+                pháp phù hợp với nhu cầu và ngân sách của mình.
               </p>
             </div>
             <div class="flex w-min flex-col items-center gap-4 desktop:w-full">
@@ -402,19 +495,19 @@
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 256 256"
                       focusable="false"
-                      color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))"
+                      color="#ff8fbc"
                       style="
                         user-select: none;
                         width: 100%;
                         height: 100%;
                         display: inline-block;
-                        fill: rgb(218, 197, 167);
-                        color: rgb(218, 197, 167);
+                        fill: #ff8fbc;
+                        color: #ff8fbc;
                         flex-shrink: 0;
                       "
                     >
                       <g
-                        color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))"
+                        color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, #ff8fbc"
                       >
                         <path
                           d="M204.24,148.24l-72,72a6,6,0,0,1-8.48,0l-72-72a6,6,0,0,1,8.48-8.48L122,201.51V40a6,6,0,0,1,12,0V201.51l61.76-61.75a6,6,0,0,1,8.48,8.48Z"
@@ -458,18 +551,24 @@
                 >
                   <div class="order-1 flex flex-col gap-4 tablet:order-none">
                     <div class="flex flex-col gap-1">
-                      <p class="text-[13px] uppercase text-text-muted">
-                        do we match?
+                      <p class="text-[16px]px] uppercase text-text-muted">
+                        Bảng Giá Cho
                       </p>
-                      <h3 class="text-[20px] font-light uppercase">
-                        discovery call
+                      <h3 class="text-[20px] font-bold uppercase">
+                        Illustration
                       </h3>
                     </div>
-                    <p class="font-chillax text-[14px] text-text-muted">
-                      Before we start, we determine if and how I can help you.
-                      What are your requirements for your new website? Why do
-                      you need a new website? What goals do you have, and what
-                      problems can we solve with a new website?
+                    <p class="text-[14px] text-text-muted">
+                      Sau khi thảo luận và thống nhất về dự án, khách hàng thanh
+                      toán một khoản tiền đặt cọc (30-50% tổng chi phí) để bắt
+                      đầu dự án. Thanh toán 100% sau khi hoàn thành dự án.
+                    </p>
+                    <p class="text-[14px] text-text-muted">
+                      Giá có thể thay đổi tùy theo độ phức tạp và yêu cầu cụ thể
+                      của từng dự án.
+                    </p>
+                    <p class="text-[14px] text-text-muted">
+                      Sản phẩm chưa tính phí thương mại.
                     </p>
                   </div>
 
@@ -477,7 +576,7 @@
                     class="order-0 w-min border-[1px] border-solid border-border bg-background-muted p-2 hover:border-border-hover hover:bg-background-muted-hover tablet:absolute tablet:right-6 tablet:top-6"
                   >
                     <p class="w-min whitespace-nowrap text-[12px] uppercase">
-                      2 hours
+                      1-2 tuần
                     </p>
                   </div>
                   <div
@@ -487,30 +586,24 @@
                       <div
                         class="aspect-square h-1 w-1 rounded-full bg-background-primary hover:bg-background-primary-hover"
                       ></div>
-                      <p
-                        class="font-chillax text-[14px] font-light tablet:text-[16px]"
-                      >
-                        We get to know each other better
+                      <p class="text-[14px] font-light tablet:text-[16px]">
+                        Inking art: 500k/20.30$ - 700k/28.42$
                       </p>
                     </div>
                     <div class="flex items-center justify-start gap-4">
                       <div
                         class="aspect-square h-1 w-1 rounded-full bg-background-primary hover:bg-background-primary-hover"
                       ></div>
-                      <p
-                        class="font-chillax text-[14px] font-light tablet:text-[16px]"
-                      >
-                        Determine how I can best assist you
+                      <p class="text-[14px] font-light tablet:text-[16px]">
+                        Line art: 400k/16.24$ - 600k/24.36$
                       </p>
                     </div>
                     <div class="flex items-center justify-start gap-4">
                       <div
                         class="aspect-square h-1 w-1 rounded-full bg-background-primary hover:bg-background-primary-hover"
                       ></div>
-                      <p
-                        class="font-chillax text-[14px] font-light tablet:text-[16px]"
-                      >
-                        Understand the goals you have for your website
+                      <p class="text-[14px] font-light tablet:text-[16px]">
+                        Full color: 600k/24.36$ - 800k/32.48$
                       </p>
                     </div>
                   </div>
@@ -548,18 +641,23 @@
                   <div class="order-1 flex flex-col gap-4 tablet:order-none">
                     <div class="flex flex-col gap-1">
                       <p class="text-[13px] uppercase text-text-muted">
-                        WE need a plan
+                        Bảng Giá Cho
                       </p>
-                      <h3 class="text-[20px] font-light uppercase">
-                        Concept & STrategy
+                      <h3 class="text-[20px] font-bold uppercase">
+                        Branding Design
                       </h3>
                     </div>
-                    <p class="font-chillax text-[14px] text-text-muted">
-                      Together, we develop a strategy that successfully combines
-                      your goals with the needs of your target audience. Based
-                      on this concept, I create the first wireframes and an
-                      interactive prototype. This provides us with a very good
-                      impression of the website and the user interface.
+                    <p class="text-[14px] text-text-muted">
+                      Sau khi thảo luận và thống nhất về dự án, khách hàng thanh
+                      toán một khoản tiền đặt cọc (30-50% tổng chi phí) để bắt
+                      đầu dự án. Thanh toán 100% sau khi hoàn thành dự án.
+                    </p>
+                    <p class="text-[14px] text-text-muted">
+                      Giá có thể thay đổi tùy theo độ phức tạp và yêu cầu cụ thể
+                      của từng dự án.
+                    </p>
+                    <p class="text-[14px] text-text-muted">
+                      Hỗ trợ chỉnh sửa theo review tối đa 3 lần sau bàn giao.
                     </p>
                   </div>
 
@@ -567,7 +665,7 @@
                     class="order-0 w-min border-[1px] border-solid border-border bg-background-muted p-2 hover:border-border-hover hover:bg-background-muted-hover tablet:absolute tablet:right-6 tablet:top-6"
                   >
                     <p class="w-min whitespace-nowrap text-[12px] uppercase">
-                      2 Weeks
+                      2 tuần
                     </p>
                   </div>
                   <div
@@ -577,30 +675,27 @@
                       <div
                         class="aspect-square h-1 w-1 rounded-full bg-background-primary hover:bg-background-primary-hover"
                       ></div>
-                      <p
-                        class="font-chillax text-[14px] font-light tablet:text-[16px]"
-                      >
-                        UX Design
+                      <p class="text-[14px] font-light tablet:text-[16px]">
+                        Gói Cơ Bản (Logo thiết kế đơn giản, bảng màu cơ bản):
+                        5tr/203$
                       </p>
                     </div>
                     <div class="flex items-center justify-start gap-4">
                       <div
                         class="aspect-square h-1 w-1 rounded-full bg-background-primary hover:bg-background-primary-hover"
                       ></div>
-                      <p
-                        class="font-chillax text-[14px] font-light tablet:text-[16px]"
-                      >
-                        Wireframes
+                      <p class="text-[14px] font-light tablet:text-[16px]">
+                        Gói Nâng Cao (Logo, bảng màu, font chữ, hướng dẫn sử
+                        dụng): 10tr/406$
                       </p>
                     </div>
                     <div class="flex items-center justify-start gap-4">
                       <div
                         class="aspect-square h-1 w-1 rounded-full bg-background-primary hover:bg-background-primary-hover"
                       ></div>
-                      <p
-                        class="font-chillax text-[14px] font-light tablet:text-[16px]"
-                      >
-                        Interactive Prototype
+                      <p class="text-[14px] font-light tablet:text-[16px]">
+                        Gói Toàn Diện (Logo, bảng màu, font chữ, hướng dẫn, danh
+                        thiếp, tiêu đề thư): 15tr/609$
                       </p>
                     </div>
                   </div>
@@ -638,18 +733,22 @@
                   <div class="order-1 flex flex-col gap-4 tablet:order-none">
                     <div class="flex flex-col gap-1">
                       <p class="text-[13px] uppercase text-text-muted">
-                        Some Magic
+                        Bảng Giá Cho
                       </p>
-                      <h3 class="text-[20px] font-light uppercase">
-                        web Design
+                      <h3 class="text-[20px] font-bold uppercase">
+                        Graphic Design
                       </h3>
                     </div>
-                    <p class="font-chillax text-[14px] text-text-muted">
-                      Now comes the magic. Based on the previously developed
-                      concept, I create a high-end screen design perfectly
-                      tailored to your brand. A web design that sets you apart
-                      from your competition, fits your target audience ideally,
-                      and provides an excellent user experience.
+                    <p class="text-[14px] text-text-muted">
+                      Sau khi thảo luận và thống nhất về dự án, khách hàng thanh
+                      toán một khoản tiền đặt cọc (30-50% tổng chi phí) để bắt
+                      đầu dự án. Thanh toán 100% sau khi hoàn thành dự án.
+                    </p>
+                    <p class="text-[14px] text-text-muted">
+                      Giá đã bao gồm chi phí chỉnh sửa hình ảnh.
+                    </p>
+                    <p class="text-[14px] text-text-muted">
+                      Hỗ trợ chỉnh sửa theo review tối đa 3 lần sau bàn giao.
                     </p>
                   </div>
 
@@ -657,7 +756,7 @@
                     class="order-0 w-min border-[1px] border-solid border-border bg-background-muted p-2 hover:border-border-hover hover:bg-background-muted-hover tablet:absolute tablet:right-6 tablet:top-6"
                   >
                     <p class="w-min whitespace-nowrap text-[12px] uppercase">
-                      2 Weeks
+                      2 tuần
                     </p>
                   </div>
                   <div
@@ -667,20 +766,33 @@
                       <div
                         class="aspect-square h-1 w-1 rounded-full bg-background-primary hover:bg-background-primary-hover"
                       ></div>
-                      <p
-                        class="font-chillax text-[14px] font-light tablet:text-[16px]"
-                      >
-                        High-end web design tailored to your brand
+                      <p class="text-[14px] font-light tablet:text-[16px]">
+                        Thiết Kế Logo: 3tr/121.8$ - 7tr/284.2$
                       </p>
                     </div>
                     <div class="flex items-center justify-start gap-4">
                       <div
                         class="aspect-square h-1 w-1 rounded-full bg-background-primary hover:bg-background-primary-hover"
                       ></div>
-                      <p
-                        class="font-chillax text-[14px] font-light tablet:text-[16px]"
-                      >
-                        Interactive prototype of the design
+                      <p class="text-[14px] font-light tablet:text-[16px]">
+                        Thiết Kế Brochure: 2tr5/101/5$ - 5tr/203$
+                      </p>
+                    </div>
+                    <div class="flex items-center justify-start gap-4">
+                      <div
+                        class="aspect-square h-1 w-1 rounded-full bg-background-primary hover:bg-background-primary-hover"
+                      ></div>
+                      <p class="text-[14px] font-light tablet:text-[16px]">
+                        Thiết Kế Poster/Banner: 2tr/81.2$ - 4tr/162.4$
+                      </p>
+                    </div>
+                    <div class="flex items-center justify-start gap-4">
+                      <div
+                        class="aspect-square h-1 w-1 rounded-full bg-background-primary hover:bg-background-primary-hover"
+                      ></div>
+                      <p class="text-[14px] font-light tablet:text-[16px]">
+                        Thiết Kế Ấn Phẩm Truyền Thông (Catalog, Flyer, Nhãn mác,
+                        Giao Diện Web,...): 1tr/40.6 - 6tr/243.6$
                       </p>
                     </div>
                   </div>
@@ -718,18 +830,24 @@
                   <div class="order-1 flex flex-col gap-4 tablet:order-none">
                     <div class="flex flex-col gap-1">
                       <p class="text-[13px] uppercase text-text-muted">
-                        More Magic
+                        Bảng Giá Cho
                       </p>
-                      <h3 class="text-[20px] font-light uppercase">
-                        Development
+                      <h3 class="text-[20px] font-bold uppercase">
+                        Photography
                       </h3>
                     </div>
-                    <p class="font-chillax text-[14px] text-text-muted">
-                      In this step, we breathe life into your new high-end
-                      design. You will receive a custom-built website using a
-                      modular web design system and CMS integration. Animations
-                      will add the necessary flair to your site and set you
-                      apart from the boring competition.
+                    <p class="text-[14px] text-text-muted">
+                      Sau khi thảo luận và thống nhất về lịch chụp sản phẩm,
+                      khách hàng thanh toán một khoản tiền đặt cọc (30-50% tổng
+                      chi phí) để giữ chỗ. Thanh toán 100% sau khi hoàn thành
+                      buổi chụp ảnh.
+                    </p>
+                    <p class="text-[14px] text-text-muted">
+                      Giá có thể thay đổi tùy theo độ phức tạp và yêu cầu cụ thể
+                      của từng dự án.
+                    </p>
+                    <p class="text-[14px] text-text-muted">
+                      Hỗ trợ chỉnh sửa theo review tối đa 3 lần sau bàn giao.
                     </p>
                   </div>
 
@@ -737,7 +855,7 @@
                     class="order-0 w-min border-[1px] border-solid border-border bg-background-muted p-2 hover:border-border-hover hover:bg-background-muted-hover tablet:absolute tablet:right-6 tablet:top-6"
                   >
                     <p class="w-min whitespace-nowrap text-[12px] uppercase">
-                      2 Weeks
+                      2 tuần
                     </p>
                   </div>
                   <div
@@ -747,121 +865,32 @@
                       <div
                         class="aspect-square h-1 w-1 rounded-full bg-background-primary hover:bg-background-primary-hover"
                       ></div>
-                      <p
-                        class="font-chillax text-[14px] font-light tablet:text-[16px]"
-                      >
-                        Custom website
+                      <p class="text-[14px] font-light tablet:text-[16px]">
+                        Sản Phẩm Đơn Lẻ (tối đa 5 góc chụp): 1tr5/ - 3tr/
                       </p>
                     </div>
                     <div class="flex items-center justify-start gap-4">
                       <div
                         class="aspect-square h-1 w-1 rounded-full bg-background-primary hover:bg-background-primary-hover"
                       ></div>
-                      <p
-                        class="font-chillax text-[14px] font-light tablet:text-[16px]"
-                      >
-                        Modular web design systems
+                      <p class="text-[14px] font-light tablet:text-[16px]">
+                        Bộ Sản Phẩm (từ 5 sản phẩm trở lên): 4tr/ - 8tr/
                       </p>
                     </div>
                     <div class="flex items-center justify-start gap-4">
                       <div
                         class="aspect-square h-1 w-1 rounded-full bg-background-primary hover:bg-background-primary-hover"
                       ></div>
-                      <p
-                        class="font-chillax text-[14px] font-light tablet:text-[16px]"
-                      >
-                        CMS integration
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              id="step-5"
-              class="flex items-start gap-6 desktop:justify-center desktop:gap-20"
-            >
-              <div
-                class="hidden desktop:order-1 desktop:flex desktop:w-full"
-              ></div>
-              <div
-                class="flex h-auto w-min flex-col items-center gap-4 self-stretch desktop:order-2"
-              >
-                <div
-                  class="h-[16px] w-[1px] bg-border desktop:h-auto desktop:flex-1"
-                ></div>
-                <div
-                  class="flex rounded-full bg-background-muted px-3 py-3 hover:bg-background-muted-hover"
-                >
-                  <div
-                    class="flex h-[20px] w-[20px] items-center justify-center"
-                  >
-                    <p class="text-center">05</p>
-                  </div>
-                </div>
-                <div class="flex w-[0px] flex-1 bg-border"></div>
-              </div>
-              <div class="flex flex-col pb-6 desktop:order-3 desktop:w-full">
-                <div
-                  class="flex flex-col gap-8 border-[1px] border-solid border-border bg-background-muted p-8 hover:border-border-hover hover:bg-background-muted-hover tablet:relative tablet:p-10"
-                >
-                  <div class="order-1 flex flex-col gap-4 tablet:order-none">
-                    <div class="flex flex-col gap-1">
-                      <p class="text-[13px] uppercase text-text-muted">
-                        Ready to go
-                      </p>
-                      <h3 class="text-[20px] font-light uppercase">
-                        WEbsite onboarding
-                      </h3>
-                    </div>
-                    <p class="font-chillax text-[14px] text-text-muted">
-                      In a personal workshop, I will show you how to make
-                      changes to your new website quickly and easily.
-                      Additionally, you will receive personalized video
-                      tutorials that you can access at any time. Edit your
-                      website without a complicated backend or the need for an
-                      additional programmer. It's as simple as that.
-                    </p>
-                  </div>
-
-                  <div
-                    class="order-0 w-min border-[1px] border-solid border-border bg-background-muted p-2 hover:border-border-hover hover:bg-background-muted-hover tablet:absolute tablet:right-6 tablet:top-6"
-                  >
-                    <p class="w-min whitespace-nowrap text-[12px] uppercase">
-                      2 hours
-                    </p>
-                  </div>
-                  <div
-                    class="order-2 flex flex-col gap-2 tablet:order-none tablet:gap-4"
-                  >
-                    <div class="flex items-center justify-start gap-4">
-                      <div
-                        class="aspect-square h-1 w-1 rounded-full bg-background-primary hover:bg-background-primary-hover"
-                      ></div>
-                      <p
-                        class="font-chillax text-[14px] font-light tablet:text-[16px]"
-                      >
-                        Personal workshop
+                      <p class="text-[14px] font-light tablet:text-[16px]">
+                        Sản Phẩm Đồ Ăn: 2tr5/ - 5tr/
                       </p>
                     </div>
                     <div class="flex items-center justify-start gap-4">
                       <div
                         class="aspect-square h-1 w-1 rounded-full bg-background-primary hover:bg-background-primary-hover"
                       ></div>
-                      <p
-                        class="font-chillax text-[14px] font-light tablet:text-[16px]"
-                      >
-                        Personalized video tutorials
-                      </p>
-                    </div>
-                    <div class="flex items-center justify-start gap-4">
-                      <div
-                        class="aspect-square h-1 w-1 rounded-full bg-background-primary hover:bg-background-primary-hover"
-                      ></div>
-                      <p
-                        class="font-chillax text-[14px] font-light tablet:text-[16px]"
-                      >
-                        Edit text and images directly on your website
+                      <p class="text-[14px] font-light tablet:text-[16px]">
+                        Sản Phẩm Thời Trang (quần áo, phụ kiện): 3tr/ - 6tr/
                       </p>
                     </div>
                   </div>
@@ -871,350 +900,336 @@
           </div>
         </div>
       </section>
-      <section
-        id="testimonials-section"
-        class="flex flex-col items-center justify-center px-6 pt-12 tablet:px-10 tablet:pt-24"
-      >
-        <div class="flex flex-col items-center justify-center gap-12">
-          <div class="flex flex-col gap-2">
-            <div class="flex flex-col gap-0">
-              <p class="text-center text-[56px] font-light tablet:text-[80px]">
-                What my
-              </p>
-              <p
-                class="text-center font-gambetta text-[56px] font-light italic tablet:text-[80px]"
-              >
-                clients say
-              </p>
-            </div>
-            <p
-              class="max-w-[500px] text-center font-chillax text-[16px] font-light"
-            >
-              See what my clients have to say about working with me and the
-              results I helped them achieve.
-            </p>
-          </div>
+      <!--      <section-->
+      <!--        id="testimonials-section"-->
+      <!--        class="flex flex-col items-center justify-center px-6 pt-12 tablet:px-10 tablet:pt-24"-->
+      <!--      >-->
+      <!--        <div class="flex flex-col items-center justify-center gap-12">-->
+      <!--          <div class="flex flex-col gap-2">-->
+      <!--            <div class="flex flex-col gap-0">-->
+      <!--              <p class="text-center text-[56px] font-light tablet:text-[80px]">-->
+      <!--                What my-->
+      <!--              </p>-->
+      <!--              <p-->
+      <!--                class="text-center font-nunito text-[56px] font-light italic tablet:text-[80px]"-->
+      <!--              >-->
+      <!--                clients say-->
+      <!--              </p>-->
+      <!--            </div>-->
+      <!--            <p class="max-w-[500px] text-center text-[16px] font-light">-->
+      <!--              See what my clients have to say about working with me and the-->
+      <!--              results I helped them achieve.-->
+      <!--            </p>-->
+      <!--          </div>-->
 
-          <div class="flex flex-col gap-4 tablet:flex-row">
-            <div class="flex flex-col gap-4">
-              <div
-                id="sonic-testimonials"
-                class="flex flex-col gap-8 border-[1px] border-solid border-border bg-background-muted p-8 hover:border-border-hover hover:bg-background-muted-hover desktop:p-10"
-              >
-                <div class="flex flex-col gap-8">
-                  <div class="h-[20px] w-[30px]">
-                    <svg
-                      style="width: 100%; height: 100%"
-                      viewBox="0 0 30 20"
-                      preserveAspectRatio="none"
-                      width="100%"
-                      height="100%"
-                    >
-                      <use href="#svg1758212889_2465"></use>
-                    </svg>
-                  </div>
-                  <div class="flex flex-col gap-2">
-                    <p class="text-[20px] font-light">
-                      Amazing Results with Đan Vy's Premium Web Design Services.
-                    </p>
-                    <p
-                      class="font-chillax text-[14px] font-light tablet:text-[16px]"
-                    >
-                      Vy is a top-notch web designer who created a stunning
-                      website for my business. He was attentive to my needs and
-                      provided excellent customer service throughout the entire
-                      process. I highly recommend his services.
-                    </p>
-                  </div>
-                </div>
-                <div class="flex gap-4">
-                  <img
-                    src="img/testimonials/matthew-smith.avif"
-                    alt="Matthew"
-                    class="h-[60px] w-[60px] rounded-full"
-                  />
-                  <div class="flex flex-col justify-center">
-                    <p class="text-[13px] uppercase">Matthew Smith</p>
-                    <p
-                      class="font-chillax text-[14px] font-light text-text-muted tablet:text-[16px]"
-                    >
-                      Sonic
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                id="stars-testimonials"
-                class="flex flex-col gap-8 border-[1px] border-solid border-border bg-background-muted p-8 hover:border-border-hover hover:bg-background-muted-hover desktop:p-10"
-              >
-                <div class="flex flex-col gap-8">
-                  <div class="h-[25px] w-[117px]">
-                    <svg
-                      style="width: 100%; height: 100%"
-                      viewBox="0 0 117 25"
-                      preserveAspectRatio="none"
-                      width="100%"
-                      height="100%"
-                    >
-                      <use href="#svg-230836560_12736"></use>
-                    </svg>
-                  </div>
-                  <div class="flex flex-col gap-2">
-                    <p class="text-[20px] font-light">
-                      Professional, Collaborative Web Design Experience with Đan
-                      Vy.
-                    </p>
-                    <p
-                      class="font-chillax text-[14px] font-light tablet:text-[16px]"
-                    >
-                      I had the pleasure of working with Đan Vy on a website
-                      development project and was blown away by his expertise
-                      and professionalism. He made the process seamless and
-                      delivered a website that exceeded our expectations. I
-                      highly recommend Đan Vy for all your web development
-                      needs.
-                    </p>
-                  </div>
-                </div>
-                <div class="flex gap-4">
-                  <img
-                    src="img/testimonials/andrea-lee.avif"
-                    alt="Matthew"
-                    class="h-[60px] w-[60px] rounded-full"
-                  />
-                  <div class="flex flex-col justify-center">
-                    <p class="text-[13px] uppercase">Andrea Lee</p>
-                    <p
-                      class="font-chillax text-[14px] font-light text-text-muted tablet:text-[16px]"
-                    >
-                      Stars
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                id="supersonic-testimonials"
-                class="flex flex-col gap-8 border-[1px] border-solid border-border bg-background-muted p-8 hover:border-border-hover hover:bg-background-muted-hover desktop:p-10"
-              >
-                <div class="flex flex-col gap-8">
-                  <div class="h-[20px] w-[52px]">
-                    <svg
-                      style="width: 100%; height: 100%"
-                      viewBox="0 0 52 20"
-                      preserveAspectRatio="none"
-                      width="100%"
-                      height="100%"
-                    >
-                      <use href="#svg-1741346970_1662"></use>
-                    </svg>
-                  </div>
-                  <div class="flex flex-col gap-2">
-                    <p class="text-[20px] font-light">
-                      Web Design and Content Solutions: Stand Out from the
-                      Crowd.
-                    </p>
-                    <p
-                      class="font-chillax text-[14px] font-light tablet:text-[16px]"
-                    >
-                      Đan Vy's SEO services have helped my business improve its
-                      online presence and increase traffic to our website. He is
-                      knowledgeable, professional, and provides excellent
-                      results. I highly recommend him for all your SEO needs.
-                    </p>
-                  </div>
-                </div>
-                <div class="flex gap-4">
-                  <img
-                    src="img/testimonials/catharine-davis.avif"
-                    alt="Matthew"
-                    class="h-[60px] w-[60px] rounded-full"
-                  />
-                  <div class="flex flex-col justify-center">
-                    <p class="text-[13px] uppercase">Catharine Davis</p>
-                    <p
-                      class="font-chillax text-[14px] font-light text-text-muted tablet:text-[16px]"
-                    >
-                      Supersonic
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex flex-col gap-4">
-              <div
-                id="solar-testimonials"
-                class="flex flex-col gap-8 border-[1px] border-solid border-border bg-background-muted p-8 hover:border-border-hover hover:bg-background-muted-hover desktop:p-10"
-              >
-                <div class="flex flex-col gap-8">
-                  <div class="h-[20px] w-[24px]">
-                    <svg
-                      style="width: 100%; height: 100%"
-                      viewBox="0 0 24 20"
-                      preserveAspectRatio="none"
-                      width="100%"
-                      height="100%"
-                    >
-                      <use href="#svg305363841_439"></use>
-                    </svg>
-                  </div>
-                  <div class="flex flex-col gap-2">
-                    <p class="text-[20px] font-light">
-                      Expert SEO Services: Excellent Work, Great Results.
-                    </p>
-                    <p
-                      class="font-chillax text-[14px] font-light tablet:text-[16px]"
-                    >
-                      Working with Đan Vy on my website redesign was a fantastic
-                      experience. He was able to take my vision and turn it into
-                      a beautiful and functional website. His attention to
-                      detail and creative approach is unmatched. I couldn't be
-                      happier with the end result.
-                    </p>
-                  </div>
-                </div>
-                <div class="flex gap-4">
-                  <img
-                    src="img/testimonials/josh-kim.avif"
-                    alt="Matthew"
-                    class="h-[60px] w-[60px] rounded-full"
-                  />
-                  <div class="flex flex-col justify-center">
-                    <p class="text-[13px] uppercase">Josh Kim</p>
-                    <p
-                      class="font-chillax text-[14px] font-light text-text-muted tablet:text-[16px]"
-                    >
-                      Solar
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                id="design-inc-testimonials"
-                class="flex flex-col gap-8 border-[1px] border-solid border-border bg-background-muted p-8 hover:border-border-hover hover:bg-background-muted-hover desktop:p-10"
-              >
-                <div class="flex flex-col gap-8">
-                  <div class="h-[30px] w-[114px]">
-                    <svg
-                      style="width: 100%; height: 100%"
-                      viewBox="0 0 114 30"
-                      preserveAspectRatio="none"
-                      width="100%"
-                      height="100%"
-                    >
-                      <use href="#svg-1947627083_11251"></use>
-                    </svg>
-                  </div>
-                  <div class="flex flex-col gap-2">
-                    <p class="text-[20px] font-light">
-                      Expertise in Web Design: Second to None with Đan Vy.
-                    </p>
-                    <p
-                      class="font-chillax text-[14px] font-light tablet:text-[16px]"
-                    >
-                      Đan Vy is not only an exceptional web designer, but also a
-                      pleasure to work with. He took the time to understand my
-                      business and its unique needs, and created a website that
-                      perfectly represents my brand. I highly recommend Đan Vy's
-                      services to anyone looking for a top-quality web designer.
-                    </p>
-                  </div>
-                </div>
-                <div class="flex gap-4">
-                  <img
-                    src="img/testimonials/andreas-thompson.avif"
-                    alt="Matthew"
-                    class="h-[60px] w-[60px] rounded-full"
-                  />
-                  <div class="flex flex-col justify-center">
-                    <p class="text-[13px] uppercase">Andreas Thompson</p>
-                    <p
-                      class="font-chillax text-[14px] font-light text-text-muted tablet:text-[16px]"
-                    >
-                      Design Inc.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                id="design-solutions-testimonials"
-                class="flex flex-col gap-8 border-[1px] border-solid border-border bg-background-muted p-8 hover:border-border-hover hover:bg-background-muted-hover desktop:p-10"
-              >
-                <div class="flex flex-col gap-8">
-                  <div class="h-[20px] w-[80px]">
-                    <svg
-                      style="width: 100%; height: 100%"
-                      viewBox="0 0 80 20"
-                      preserveAspectRatio="none"
-                      width="100%"
-                      height="100%"
-                    >
-                      <use href="#svg2139786235_3214"></use>
-                    </svg>
-                  </div>
-                  <div class="flex flex-col gap-2">
-                    <p class="text-[20px] font-light">
-                      High-Quality Web Design: Exceptional Attention to Detail
-                      with Đan Vy.
-                    </p>
-                    <p
-                      class="font-chillax text-[14px] font-light tablet:text-[16px]"
-                    >
-                      Đan Vy's development services are top-notch. He is able to
-                      take complex ideas and turn them into functional,
-                      user-friendly websites. His attention to detail and
-                      commitment to customer satisfaction are unmatched. I
-                      highly recommend Đan Vy for all your web development
-                      needs.
-                    </p>
-                  </div>
-                </div>
-                <div class="flex gap-4">
-                  <img
-                    src="img/testimonials/liam-chen.avif"
-                    alt="Matthew"
-                    class="h-[60px] w-[60px] rounded-full"
-                  />
-                  <div class="flex flex-col justify-center">
-                    <p class="text-[13px] uppercase">Liam Chen</p>
-                    <p
-                      class="font-chillax text-[14px] font-light text-text-muted tablet:text-[16px]"
-                    >
-                      Design Solutions
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <!--          <div class="flex flex-col gap-4 tablet:flex-row">-->
+      <!--            <div class="flex flex-col gap-4">-->
+      <!--              <div-->
+      <!--                id="sonic-testimonials"-->
+      <!--                class="flex flex-col gap-8 border-[1px] border-solid border-border bg-background-muted p-8 hover:border-border-hover hover:bg-background-muted-hover desktop:p-10"-->
+      <!--              >-->
+      <!--                <div class="flex flex-col gap-8">-->
+      <!--                  <div class="h-[20px] w-[30px]">-->
+      <!--                    <svg-->
+      <!--                      style="width: 100%; height: 100%"-->
+      <!--                      viewBox="0 0 30 20"-->
+      <!--                      preserveAspectRatio="none"-->
+      <!--                      width="100%"-->
+      <!--                      height="100%"-->
+      <!--                    >-->
+      <!--                      <use href="#svg1758212889_2465"></use>-->
+      <!--                    </svg>-->
+      <!--                  </div>-->
+      <!--                  <div class="flex flex-col gap-2">-->
+      <!--                    <p class="text-[20px] font-light">-->
+      <!--                      Amazing Results with Đan Vy's Premium Web Design Services.-->
+      <!--                    </p>-->
+      <!--                    <p class="text-[14px] font-light tablet:text-[16px]">-->
+      <!--                      Vy is a top-notch web designer who created a stunning-->
+      <!--                      website for my business. He was attentive to my needs and-->
+      <!--                      provided excellent customer service throughout the entire-->
+      <!--                      process. I highly recommend his services.-->
+      <!--                    </p>-->
+      <!--                  </div>-->
+      <!--                </div>-->
+      <!--                <div class="flex gap-4">-->
+      <!--                  <img-->
+      <!--                    src="img/testimonials/matthew-smith.avif"-->
+      <!--                    alt="Matthew"-->
+      <!--                    class="h-[60px] w-[60px] rounded-full"-->
+      <!--                  />-->
+      <!--                  <div class="flex flex-col justify-center">-->
+      <!--                    <p class="text-[13px] uppercase">Matthew Smith</p>-->
+      <!--                    <p-->
+      <!--                      class="text-[14px] font-light text-text-muted tablet:text-[16px]"-->
+      <!--                    >-->
+      <!--                      Sonic-->
+      <!--                    </p>-->
+      <!--                  </div>-->
+      <!--                </div>-->
+      <!--              </div>-->
+      <!--              <div-->
+      <!--                id="stars-testimonials"-->
+      <!--                class="flex flex-col gap-8 border-[1px] border-solid border-border bg-background-muted p-8 hover:border-border-hover hover:bg-background-muted-hover desktop:p-10"-->
+      <!--              >-->
+      <!--                <div class="flex flex-col gap-8">-->
+      <!--                  <div class="h-[25px] w-[117px]">-->
+      <!--                    <svg-->
+      <!--                      style="width: 100%; height: 100%"-->
+      <!--                      viewBox="0 0 117 25"-->
+      <!--                      preserveAspectRatio="none"-->
+      <!--                      width="100%"-->
+      <!--                      height="100%"-->
+      <!--                    >-->
+      <!--                      <use href="#svg-230836560_12736"></use>-->
+      <!--                    </svg>-->
+      <!--                  </div>-->
+      <!--                  <div class="flex flex-col gap-2">-->
+      <!--                    <p class="text-[20px] font-light">-->
+      <!--                      Professional, Collaborative Web Design Experience with Đan-->
+      <!--                      Vy.-->
+      <!--                    </p>-->
+      <!--                    <p class="text-[14px] font-light tablet:text-[16px]">-->
+      <!--                      I had the pleasure of working with Đan Vy on a website-->
+      <!--                      development project and was blown away by his expertise-->
+      <!--                      and professionalism. He made the process seamless and-->
+      <!--                      delivered a website that exceeded our expectations. I-->
+      <!--                      highly recommend Đan Vy for all your web development-->
+      <!--                      needs.-->
+      <!--                    </p>-->
+      <!--                  </div>-->
+      <!--                </div>-->
+      <!--                <div class="flex gap-4">-->
+      <!--                  <img-->
+      <!--                    src="img/testimonials/andrea-lee.avif"-->
+      <!--                    alt="Matthew"-->
+      <!--                    class="h-[60px] w-[60px] rounded-full"-->
+      <!--                  />-->
+      <!--                  <div class="flex flex-col justify-center">-->
+      <!--                    <p class="text-[13px] uppercase">Andrea Lee</p>-->
+      <!--                    <p-->
+      <!--                      class="text-[14px] font-light text-text-muted tablet:text-[16px]"-->
+      <!--                    >-->
+      <!--                      Stars-->
+      <!--                    </p>-->
+      <!--                  </div>-->
+      <!--                </div>-->
+      <!--              </div>-->
+      <!--              <div-->
+      <!--                id="supersonic-testimonials"-->
+      <!--                class="flex flex-col gap-8 border-[1px] border-solid border-border bg-background-muted p-8 hover:border-border-hover hover:bg-background-muted-hover desktop:p-10"-->
+      <!--              >-->
+      <!--                <div class="flex flex-col gap-8">-->
+      <!--                  <div class="h-[20px] w-[52px]">-->
+      <!--                    <svg-->
+      <!--                      style="width: 100%; height: 100%"-->
+      <!--                      viewBox="0 0 52 20"-->
+      <!--                      preserveAspectRatio="none"-->
+      <!--                      width="100%"-->
+      <!--                      height="100%"-->
+      <!--                    >-->
+      <!--                      <use href="#svg-1741346970_1662"></use>-->
+      <!--                    </svg>-->
+      <!--                  </div>-->
+      <!--                  <div class="flex flex-col gap-2">-->
+      <!--                    <p class="text-[20px] font-light">-->
+      <!--                      Web Design and Content Solutions: Stand Out from the-->
+      <!--                      Crowd.-->
+      <!--                    </p>-->
+      <!--                    <p class="text-[14px] font-light tablet:text-[16px]">-->
+      <!--                      Đan Vy's SEO services have helped my business improve its-->
+      <!--                      online presence and increase traffic to our website. He is-->
+      <!--                      knowledgeable, professional, and provides excellent-->
+      <!--                      results. I highly recommend him for all your SEO needs.-->
+      <!--                    </p>-->
+      <!--                  </div>-->
+      <!--                </div>-->
+      <!--                <div class="flex gap-4">-->
+      <!--                  <img-->
+      <!--                    src="img/testimonials/catharine-davis.avif"-->
+      <!--                    alt="Matthew"-->
+      <!--                    class="h-[60px] w-[60px] rounded-full"-->
+      <!--                  />-->
+      <!--                  <div class="flex flex-col justify-center">-->
+      <!--                    <p class="text-[13px] uppercase">Catharine Davis</p>-->
+      <!--                    <p-->
+      <!--                      class="text-[14px] font-light text-text-muted tablet:text-[16px]"-->
+      <!--                    >-->
+      <!--                      Supersonic-->
+      <!--                    </p>-->
+      <!--                  </div>-->
+      <!--                </div>-->
+      <!--              </div>-->
+      <!--            </div>-->
+      <!--            <div class="flex flex-col gap-4">-->
+      <!--              <div-->
+      <!--                id="solar-testimonials"-->
+      <!--                class="flex flex-col gap-8 border-[1px] border-solid border-border bg-background-muted p-8 hover:border-border-hover hover:bg-background-muted-hover desktop:p-10"-->
+      <!--              >-->
+      <!--                <div class="flex flex-col gap-8">-->
+      <!--                  <div class="h-[20px] w-[24px]">-->
+      <!--                    <svg-->
+      <!--                      style="width: 100%; height: 100%"-->
+      <!--                      viewBox="0 0 24 20"-->
+      <!--                      preserveAspectRatio="none"-->
+      <!--                      width="100%"-->
+      <!--                      height="100%"-->
+      <!--                    >-->
+      <!--                      <use href="#svg305363841_439"></use>-->
+      <!--                    </svg>-->
+      <!--                  </div>-->
+      <!--                  <div class="flex flex-col gap-2">-->
+      <!--                    <p class="text-[20px] font-light">-->
+      <!--                      Expert SEO Services: Excellent Work, Great Results.-->
+      <!--                    </p>-->
+      <!--                    <p class="text-[14px] font-light tablet:text-[16px]">-->
+      <!--                      Working with Đan Vy on my website redesign was a fantastic-->
+      <!--                      experience. He was able to take my vision and turn it into-->
+      <!--                      a beautiful and functional website. His attention to-->
+      <!--                      detail and creative approach is unmatched. I couldn't be-->
+      <!--                      happier with the end result.-->
+      <!--                    </p>-->
+      <!--                  </div>-->
+      <!--                </div>-->
+      <!--                <div class="flex gap-4">-->
+      <!--                  <img-->
+      <!--                    src="img/testimonials/josh-kim.avif"-->
+      <!--                    alt="Matthew"-->
+      <!--                    class="h-[60px] w-[60px] rounded-full"-->
+      <!--                  />-->
+      <!--                  <div class="flex flex-col justify-center">-->
+      <!--                    <p class="text-[13px] uppercase">Josh Kim</p>-->
+      <!--                    <p-->
+      <!--                      class="text-[14px] font-light text-text-muted tablet:text-[16px]"-->
+      <!--                    >-->
+      <!--                      Solar-->
+      <!--                    </p>-->
+      <!--                  </div>-->
+      <!--                </div>-->
+      <!--              </div>-->
+      <!--              <div-->
+      <!--                id="design-inc-testimonials"-->
+      <!--                class="flex flex-col gap-8 border-[1px] border-solid border-border bg-background-muted p-8 hover:border-border-hover hover:bg-background-muted-hover desktop:p-10"-->
+      <!--              >-->
+      <!--                <div class="flex flex-col gap-8">-->
+      <!--                  <div class="h-[30px] w-[114px]">-->
+      <!--                    <svg-->
+      <!--                      style="width: 100%; height: 100%"-->
+      <!--                      viewBox="0 0 114 30"-->
+      <!--                      preserveAspectRatio="none"-->
+      <!--                      width="100%"-->
+      <!--                      height="100%"-->
+      <!--                    >-->
+      <!--                      <use href="#svg-1947627083_11251"></use>-->
+      <!--                    </svg>-->
+      <!--                  </div>-->
+      <!--                  <div class="flex flex-col gap-2">-->
+      <!--                    <p class="text-[20px] font-light">-->
+      <!--                      Expertise in Web Design: Second to None with Đan Vy.-->
+      <!--                    </p>-->
+      <!--                    <p class="text-[14px] font-light tablet:text-[16px]">-->
+      <!--                      Đan Vy is not only an exceptional web designer, but also a-->
+      <!--                      pleasure to work with. He took the time to understand my-->
+      <!--                      business and its unique needs, and created a website that-->
+      <!--                      perfectly represents my brand. I highly recommend Đan Vy's-->
+      <!--                      services to anyone looking for a top-quality web designer.-->
+      <!--                    </p>-->
+      <!--                  </div>-->
+      <!--                </div>-->
+      <!--                <div class="flex gap-4">-->
+      <!--                  <img-->
+      <!--                    src="img/testimonials/andreas-thompson.avif"-->
+      <!--                    alt="Matthew"-->
+      <!--                    class="h-[60px] w-[60px] rounded-full"-->
+      <!--                  />-->
+      <!--                  <div class="flex flex-col justify-center">-->
+      <!--                    <p class="text-[13px] uppercase">Andreas Thompson</p>-->
+      <!--                    <p-->
+      <!--                      class="text-[14px] font-light text-text-muted tablet:text-[16px]"-->
+      <!--                    >-->
+      <!--                      Design Inc.-->
+      <!--                    </p>-->
+      <!--                  </div>-->
+      <!--                </div>-->
+      <!--              </div>-->
+      <!--              <div-->
+      <!--                id="design-solutions-testimonials"-->
+      <!--                class="flex flex-col gap-8 border-[1px] border-solid border-border bg-background-muted p-8 hover:border-border-hover hover:bg-background-muted-hover desktop:p-10"-->
+      <!--              >-->
+      <!--                <div class="flex flex-col gap-8">-->
+      <!--                  <div class="h-[20px] w-[80px]">-->
+      <!--                    <svg-->
+      <!--                      style="width: 100%; height: 100%"-->
+      <!--                      viewBox="0 0 80 20"-->
+      <!--                      preserveAspectRatio="none"-->
+      <!--                      width="100%"-->
+      <!--                      height="100%"-->
+      <!--                    >-->
+      <!--                      <use href="#svg2139786235_3214"></use>-->
+      <!--                    </svg>-->
+      <!--                  </div>-->
+      <!--                  <div class="flex flex-col gap-2">-->
+      <!--                    <p class="text-[20px] font-light">-->
+      <!--                      High-Quality Web Design: Exceptional Attention to Detail-->
+      <!--                      with Đan Vy.-->
+      <!--                    </p>-->
+      <!--                    <p class="text-[14px] font-light tablet:text-[16px]">-->
+      <!--                      Đan Vy's development services are top-notch. He is able to-->
+      <!--                      take complex ideas and turn them into functional,-->
+      <!--                      user-friendly websites. His attention to detail and-->
+      <!--                      commitment to customer satisfaction are unmatched. I-->
+      <!--                      highly recommend Đan Vy for all your web development-->
+      <!--                      needs.-->
+      <!--                    </p>-->
+      <!--                  </div>-->
+      <!--                </div>-->
+      <!--                <div class="flex gap-4">-->
+      <!--                  <img-->
+      <!--                    src="img/testimonials/liam-chen.avif"-->
+      <!--                    alt="Matthew"-->
+      <!--                    class="h-[60px] w-[60px] rounded-full"-->
+      <!--                  />-->
+      <!--                  <div class="flex flex-col justify-center">-->
+      <!--                    <p class="text-[13px] uppercase">Liam Chen</p>-->
+      <!--                    <p-->
+      <!--                      class="text-[14px] font-light text-text-muted tablet:text-[16px]"-->
+      <!--                    >-->
+      <!--                      Design Solutions-->
+      <!--                    </p>-->
+      <!--                  </div>-->
+      <!--                </div>-->
+      <!--              </div>-->
+      <!--            </div>-->
+      <!--          </div>-->
+      <!--        </div>-->
+      <!--      </section>-->
       <section
         id="cta-section"
         class="flex justify-center px-6 py-16 tablet:px-10 tablet:py-24"
       >
         <div class="flex max-w-[1200px] flex-col items-center gap-12">
           <div class="flex flex-col gap-4">
-            <p class="text-center text-[13px] uppercase">Project in mind?</p>
+            <p class="text-center text-[13px] uppercase">bạn có ý tưởng?</p>
             <div class="flex flex-col">
               <p class="text-center text-[64px] font-light tablet:text-[80px]">
-                Let's make your
+                Hãy để thiết kế của bạn
               </p>
               <p
-                class="text-center font-gambetta text-[64px] font-light italic tablet:text-[80px]"
+                class="text-center font-nunito text-[64px] font-light italic tablet:text-[80px]"
               >
-                Website shine
+                tỏa sáng!
               </p>
             </div>
-            <p class="text-center font-chillax text-[18px] font-light">
-              Premium web design, development, and SEO services to help your
-              business stand out.
-            </p>
+            <!--            <p class="text-center  text-[18px] font-light">-->
+            <!--              Premium web design, development, and SEO services to help your-->
+            <!--              business stand out.-->
+            <!--            </p>-->
           </div>
           <a
             href="./contact.html"
             class="order-1 flex items-center justify-center gap-4 whitespace-nowrap rounded-[2px] border-[1px] border-solid bg-background-primary px-4 py-2.5 uppercase text-text-inverse hover:bg-background-primary-hover"
           >
-            get in touch
+            liên hệ ngay
             <div class="h-4 w-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -1248,7 +1263,7 @@
       <div class="flex flex-col items-center gap-12">
         <div class="flex flex-col items-center gap-12">
           <a href="." class="w-min whitespace-nowrap text-center text-3xl">
-            Đan Vy
+            Vy's Porfolio
           </a>
           <div class="flex flex-col gap-4">
             <a
@@ -1266,19 +1281,19 @@
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 256 256"
                       focusable="false"
-                      color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))"
+                      color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, #ff8fbc"
                       style="
                         user-select: none;
                         width: 100%;
                         height: 100%;
                         display: inline-block;
-                        fill: rgb(218, 197, 167);
-                        color: rgb(218, 197, 167);
+                        fill: #ff8fbc;
+                        color: #ff8fbc;
                         flex-shrink: 0;
                       "
                     >
                       <g
-                        color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))"
+                        color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, #ff8fbc"
                       >
                         <path
                           d="M128,82a46,46,0,1,0,46,46A46.06,46.06,0,0,0,128,82Zm0,80a34,34,0,1,1,34-34A34,34,0,0,1,128,162ZM176,26H80A54.06,54.06,0,0,0,26,80v96a54.06,54.06,0,0,0,54,54h96a54.06,54.06,0,0,0,54-54V80A54.06,54.06,0,0,0,176,26Zm42,150a42,42,0,0,1-42,42H80a42,42,0,0,1-42-42V80A42,42,0,0,1,80,38h96a42,42,0,0,1,42,42ZM190,76a10,10,0,1,1-10-10A10,10,0,0,1,190,76Z"
@@ -1305,19 +1320,19 @@
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 256 256"
                       focusable="false"
-                      color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))"
+                      color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, #ff8fbc"
                       style="
                         user-select: none;
                         width: 100%;
                         height: 100%;
                         display: inline-block;
-                        fill: rgb(218, 197, 167);
-                        color: rgb(218, 197, 167);
+                        fill: #ff8fbc;
+                        color: #ff8fbc;
                         flex-shrink: 0;
                       "
                     >
                       <g
-                        color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))"
+                        color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, #ff8fbc"
                       >
                         <path
                           d="M245.54,69.71A6,6,0,0,0,240,66H208.4a46.6,46.6,0,0,0-40.33-24,44.93,44.93,0,0,0-32.31,13.12A45.92,45.92,0,0,0,122,88v8.66c-42-10-76.6-44.52-77-44.88A6,6,0,0,0,34.8,55.46c-4.25,47.22,9.42,78.75,21.64,96.89a107.71,107.71,0,0,0,23.07,25c-15.49,19-41.34,28.89-41.62,29a6,6,0,0,0-2.88,9C36,216.83,45.78,230,80,230c69.88,0,128.23-54,133.82-123.34l30.42-30.41A6,6,0,0,0,245.54,69.71ZM203.76,99.76a6,6,0,0,0-1.75,3.86C197.93,167.76,144.33,218,80,218c-14,0-22.76-2.41-28.06-4.8,11.3-5.68,29.72-16.88,41.05-33.87a6,6,0,0,0,.85-4.67A6,6,0,0,0,91,170.82c-.13-.08-13.13-7.86-25-25.72C52,124,45.31,98.43,46,68.88c14.88,12.6,45.57,35.09,81,41a6,6,0,0,0,7-5.92V88a34,34,0,0,1,10.19-24.34A33.05,33.05,0,0,1,167.93,54c13.43.17,26,8.37,31.24,20.4a6,6,0,0,0,5.5,3.6h20.84Z"
@@ -1344,19 +1359,19 @@
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 256 256"
                       focusable="false"
-                      color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))"
+                      color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, #ff8fbc"
                       style="
                         user-select: none;
                         width: 100%;
                         height: 100%;
                         display: inline-block;
-                        fill: rgb(218, 197, 167);
-                        color: rgb(218, 197, 167);
+                        fill: #ff8fbc;
+                        color: #ff8fbc;
                         flex-shrink: 0;
                       "
                     >
                       <g
-                        color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))"
+                        color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, #ff8fbc"
                       >
                         <path
                           d="M128,26A102,102,0,1,0,230,128,102.12,102.12,0,0,0,128,26Zm89.81,96.3c-3.26-.19-6.54-.3-9.8-.3a166.44,166.44,0,0,0-45.25,6.29A164.28,164.28,0,0,0,148.33,96c-.14-.25-.3-.49-.44-.74a166.34,166.34,0,0,0,40.79-33.71A89.79,89.79,0,0,1,217.81,122.3ZM179.29,54.09a154.52,154.52,0,0,1-37.9,31.11A167,167,0,0,0,98.88,42.84a89.87,89.87,0,0,1,80.41,11.25ZM85.71,48.58a155,155,0,0,1,45,42.27A153.71,153.71,0,0,1,64,106a156.8,156.8,0,0,1-22.84-1.69A90.37,90.37,0,0,1,85.71,48.58ZM38,128a90.17,90.17,0,0,1,.79-11.92A167.23,167.23,0,0,0,64,118a165.69,165.69,0,0,0,73.29-17c.22.37.46.73.67,1.1A152.2,152.2,0,0,1,151.34,132a164.57,164.57,0,0,0-26.09,12.11A167,167,0,0,0,69.57,196.4,89.84,89.84,0,0,1,38,128Zm41.19,75.58a155.24,155.24,0,0,1,52.05-49.12,152.9,152.9,0,0,1,23.38-10.93,154.31,154.31,0,0,1,4.3,36.16,154.78,154.78,0,0,1-3.81,34.13,89.88,89.88,0,0,1-75.92-10.24Zm89.24,4.81a166.76,166.76,0,0,0,2.49-28.7,166.67,166.67,0,0,0-4.86-39.87A154.6,154.6,0,0,1,208,134c3.25,0,6.52.11,9.77.32A90.16,90.16,0,0,1,168.43,208.39Z"
@@ -1383,19 +1398,19 @@
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 256 256"
                       focusable="false"
-                      color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))"
+                      color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, #ff8fbc"
                       style="
                         user-select: none;
                         width: 100%;
                         height: 100%;
                         display: inline-block;
-                        fill: rgb(218, 197, 167);
-                        color: rgb(218, 197, 167);
+                        fill: #ff8fbc;
+                        color: #ff8fbc;
                         flex-shrink: 0;
                       "
                     >
                       <g
-                        color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))"
+                        color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, #ff8fbc"
                       >
                         <path
                           d="M112.15,122.36A36,36,0,0,0,90,58H32a6,6,0,0,0-6,6V192a6,6,0,0,0,6,6H94a40,40,0,0,0,18.15-75.64ZM38,70H90a24,24,0,0,1,0,48H38ZM94,186H38V130H94a28,28,0,0,1,0,56ZM162,80a6,6,0,0,1,6-6h64a6,6,0,0,1,0,12H168A6,6,0,0,1,162,80Zm38,26a46,46,0,1,0,36.8,73.61,6,6,0,0,0-9.6-7.21A34,34,0,0,1,166.53,158H240a6,6,0,0,0,6-6A46.06,46.06,0,0,0,200,106Zm-33.47,40a34,34,0,0,1,66.94,0Z"
@@ -1422,12 +1437,21 @@
               >blog</a
             >
           </div>
-          <p class="font-chillax text-[14px]">© Made by Đan Vy</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2744298062926!2d106.66992807749786!3d10.790280989359259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed4ce6daa25%3A0xb811efcf5f805fc!2zNjMvMTIgxJAuIEzDqiBWxINuIFPhu7ksIFBoxrDhu51uZyAxMywgUGjDuiBOaHXhuq1uLCBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1727965770220!5m2!1sen!2s"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <p class="text-[14px]">© Made by Đan Vy</p>
           <a href="#main" class="flex gap-4">
             <p
-              class="flex items-center justify-center text-center text-[13px] font-normal tablet:text-[22px]"
+              class="flex items-center justify-center text-center text-[13px] font-normal uppercase tablet:text-[22px]"
             >
-              TO TOP
+              lên đầu trang
             </p>
             <div
               class="flex rounded-full bg-background-muted px-3 py-3 hover:bg-background-muted-hover"
@@ -1437,19 +1461,19 @@
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 256 256"
                   focusable="false"
-                  color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))"
+                  color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, #ff8fbc"
                   style="
                     user-select: none;
                     width: 100%;
                     height: 100%;
                     display: inline-block;
-                    fill: rgb(218, 197, 167);
-                    color: rgb(218, 197, 167);
+                    fill: #ff8fbc;
+                    color: #ff8fbc;
                     flex-shrink: 0;
                   "
                 >
                   <g
-                    color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, rgb(218, 197, 167))"
+                    color="var(--token-c5c4fdcb-9482-48bb-aedf-353188472aae, #ff8fbc"
                   >
                     <path
                       d="M204.24,116.24a6,6,0,0,1-8.48,0L134,54.49V216a6,6,0,0,1-12,0V54.49L60.24,116.24a6,6,0,0,1-8.48-8.48l72-72a6,6,0,0,1,8.48,0l72,72A6,6,0,0,1,204.24,116.24Z"
@@ -1558,7 +1582,7 @@
       <svg width="18" height="18" fill="none" id="svg1845496161_258">
         <path
           d="M13.922 4.5v7.313a.422.422 0 0 1-.844 0V5.52l-8.283 8.275a.418.418 0 0 1-.59-.59l8.275-8.283H6.187a.422.422 0 0 1 0-.844H13.5a.422.422 0 0 1 .422.422Z"
-          fill="#DAC5A7"
+          fill="#ff8fbc"
         ></path>
       </svg>
       <svg
